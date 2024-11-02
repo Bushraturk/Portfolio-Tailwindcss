@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @layer base{
+  body{
+    background-color: #000;
+    color: #fff;
+  }
+} */
+
+
+@layer components{
+  .menuLink{
+    @apply cursor-pointer hover:text-[#cad1e2]
+  }
+
+  .tags{
+    background-color: #0abde0;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 12px;
+  }
+
+
+  .tags:last-child{
+    margin-right: 0;
+
+  }
+
+  .tags:nth-child(2){
+    background-color: #a55aa5;
+  }
+
+  .tags:nth-child(3){
+    background-color: #bec03f;
+  }
+
+  .tags:nth-child(4){
+    background-color: #bd6363;
+  }
+  .cards{
+    .card {
+      width: 300px; /* Set a fixed width */
+      height: 400px; /* Set a fixed height */
+      overflow: hidden; /* Hide overflow if content exceeds the size */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background bg-black; 
+    color: white;
+    
+  }
+}
+}
+
+/*  bg-background text-foreground */
